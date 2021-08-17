@@ -1,4 +1,6 @@
 const router = require("express").Router();
+const url = require("url");
+const puppeteer = require("puppeteer");
 
 router.use("/api", require("./api"));
 
@@ -8,6 +10,38 @@ router.get("/", (req, res) => {
 
 router.get("/curriculum", (req, res) => {
     res.render("curriculum");
+})
+
+async function generatePdf(key, locale) {
+
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+    const url = `http://localhost:3001/curriculum?pdf=true&key=${key}`;
+    await page.setCookie({name: "locale", value: locale, url});
+    await page.goto(url, {waitUntil: "networkidle2"});
+
+    const pdf = await page.pdf({format: "a4", printBackground: true});
+
+    await browser.close();
+    return pdf;
+}
+
+router.get("/pdf", (req, res) => {
+
+    queryObj = url.parse(req.url, true).query;
+
+    const key = queryObj.key || "";
+
+    const locale = req.getLocale() || "";
+
+    generatePdf(key, locale).then((buff) => {
+        res.setHeader("Content-Type", "application/pdf");
+        return res.send(buff);
+    }).catch((err) => {
+        console.error(err);
+        return res.send("Error generating PDF");
+    });
+
 })
 
 module.exports = router;
