@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/curriculum/static/css/main.c8ac1994.chunk.css",
+    "main.js": "/curriculum/static/js/main.96acd920.chunk.js",
+    "main.js.map": "/curriculum/static/js/main.96acd920.chunk.js.map",
+    "runtime-main.js": "/curriculum/static/js/runtime-main.c3decf88.js",
+    "runtime-main.js.map": "/curriculum/static/js/runtime-main.c3decf88.js.map",
+    "static/js/2.e3c16f58.chunk.js": "/curriculum/static/js/2.e3c16f58.chunk.js",
+    "static/js/2.e3c16f58.chunk.js.map": "/curriculum/static/js/2.e3c16f58.chunk.js.map",
+    "static/js/3.202b0127.chunk.js": "/curriculum/static/js/3.202b0127.chunk.js",
+    "static/js/3.202b0127.chunk.js.map": "/curriculum/static/js/3.202b0127.chunk.js.map",
+    "index.html": "/curriculum/index.html",
+    "static/css/main.c8ac1994.chunk.css.map": "/curriculum/static/css/main.c8ac1994.chunk.css.map",
+    "static/js/2.e3c16f58.chunk.js.LICENSE.txt": "/curriculum/static/js/2.e3c16f58.chunk.js.LICENSE.txt",
+    "static/media/C++_Logo.10675888.svg": "/curriculum/static/media/C++_Logo.10675888.svg",
+    "static/media/Kotlin_logo.22a89dcc.svg": "/curriculum/static/media/Kotlin_logo.22a89dcc.svg",
+    "static/media/Python-logo-notext.063da199.svg": "/curriculum/static/media/Python-logo-notext.063da199.svg",
+    "static/media/csharp_logo.a7ec03d2.svg": "/curriculum/static/media/csharp_logo.a7ec03d2.svg",
+    "static/media/java.5e8cb917.svg": "/curriculum/static/media/java.5e8cb917.svg",
+    "static/media/javascript_logo.acc4642f.svg": "/curriculum/static/media/javascript_logo.acc4642f.svg",
+    "static/media/me.4a733cd7.jpg": "/curriculum/static/media/me.4a733cd7.jpg",
+    "static/media/typescript_logo.e0cf5672.svg": "/curriculum/static/media/typescript_logo.e0cf5672.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c3decf88.js",
+    "static/js/2.e3c16f58.chunk.js",
+    "static/css/main.c8ac1994.chunk.css",
+    "static/js/main.96acd920.chunk.js"
+  ]
+}
