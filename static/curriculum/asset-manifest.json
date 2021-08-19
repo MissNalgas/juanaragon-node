@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/curriculum/static/css/main.3adf3611.chunk.css",
-    "main.js": "/curriculum/static/js/main.d589d447.chunk.js",
-    "main.js.map": "/curriculum/static/js/main.d589d447.chunk.js.map",
-    "runtime-main.js": "/curriculum/static/js/runtime-main.c3decf88.js",
-    "runtime-main.js.map": "/curriculum/static/js/runtime-main.c3decf88.js.map",
-    "static/js/2.e3c16f58.chunk.js": "/curriculum/static/js/2.e3c16f58.chunk.js",
-    "static/js/2.e3c16f58.chunk.js.map": "/curriculum/static/js/2.e3c16f58.chunk.js.map",
-    "static/js/3.202b0127.chunk.js": "/curriculum/static/js/3.202b0127.chunk.js",
-    "static/js/3.202b0127.chunk.js.map": "/curriculum/static/js/3.202b0127.chunk.js.map",
+    "main.css": "/curriculum/static/css/main.5c0577be.chunk.css",
+    "main.js": "/curriculum/static/js/main.6b186b81.chunk.js",
+    "main.js.map": "/curriculum/static/js/main.6b186b81.chunk.js.map",
+    "runtime-main.js": "/curriculum/static/js/runtime-main.c288f5b8.js",
+    "runtime-main.js.map": "/curriculum/static/js/runtime-main.c288f5b8.js.map",
+    "static/js/2.c263d70c.chunk.js": "/curriculum/static/js/2.c263d70c.chunk.js",
+    "static/js/2.c263d70c.chunk.js.map": "/curriculum/static/js/2.c263d70c.chunk.js.map",
+    "static/js/3.c55f6f95.chunk.js": "/curriculum/static/js/3.c55f6f95.chunk.js",
+    "static/js/3.c55f6f95.chunk.js.map": "/curriculum/static/js/3.c55f6f95.chunk.js.map",
     "index.html": "/curriculum/index.html",
-    "static/css/main.3adf3611.chunk.css.map": "/curriculum/static/css/main.3adf3611.chunk.css.map",
-    "static/js/2.e3c16f58.chunk.js.LICENSE.txt": "/curriculum/static/js/2.e3c16f58.chunk.js.LICENSE.txt",
+    "static/css/main.5c0577be.chunk.css.map": "/curriculum/static/css/main.5c0577be.chunk.css.map",
+    "static/js/2.c263d70c.chunk.js.LICENSE.txt": "/curriculum/static/js/2.c263d70c.chunk.js.LICENSE.txt",
     "static/media/C++_Logo.10675888.svg": "/curriculum/static/media/C++_Logo.10675888.svg",
     "static/media/Kotlin_logo.22a89dcc.svg": "/curriculum/static/media/Kotlin_logo.22a89dcc.svg",
     "static/media/Python-logo-notext.063da199.svg": "/curriculum/static/media/Python-logo-notext.063da199.svg",
@@ -22,9 +22,9 @@
     "static/media/typescript_logo.e0cf5672.svg": "/curriculum/static/media/typescript_logo.e0cf5672.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c3decf88.js",
-    "static/js/2.e3c16f58.chunk.js",
-    "static/css/main.3adf3611.chunk.css",
-    "static/js/main.d589d447.chunk.js"
+    "static/js/runtime-main.c288f5b8.js",
+    "static/js/2.c263d70c.chunk.js",
+    "static/css/main.5c0577be.chunk.css",
+    "static/js/main.6b186b81.chunk.js"
   ]
 }

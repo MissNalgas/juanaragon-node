@@ -25,5 +25,6 @@
     "experienceDeploying": "With experiennce with the deployment of production application as a Freelancer",
     "extras": "Extras",
     "send": "Send",
-    "secretKey": "Secret key"
+    "secretKey": "Secret key",
+    "invalidKey": "Invalid key"
 }

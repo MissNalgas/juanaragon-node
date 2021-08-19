@@ -25,5 +25,6 @@
     "experienceDeploying": "Experiencia con el desarrollo de aplicaciones para producción como agente Freelance",
     "extras": "Extras",
     "send": "Enviar",
-    "secretKey": "Clave secreta"
+    "secretKey": "Clave secreta",
+    "invalidKey": "Clave inválida"
 }
