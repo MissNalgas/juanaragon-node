@@ -1,6 +1,8 @@
 const router = require("express").Router();
 
+const {generateKey, validateKey} = require("../../models/utils");
 const { secret } = require("../../secret");
+
 
 router.get("/locale", (req, res) => {
     res.json({locale: req.getLocale()});
@@ -19,13 +21,33 @@ router.post("/secret", (req, res) => {
 
     const {key} = req.body;
 
-    if (key === "abc") {
+    validateKey(key).then(() => {
         return res.json(secret);
-    } else {
+    }).catch((err) => {
+        console.error(err);
         const code = 403;
         res.statusCode = code;
-        return res.json({code, message: "Invalid key"});
+        return res.json({code, message: "Invalid key"})
+    })
+})
+
+router.post("/generatekey", (req, res) => {
+    if (!("expiration" in req.body)) {
+        const code = 401;
+        return res.json({code, message: "Invalid"})
     }
+
+    let {expiration} = req.body;
+    expiration += Date.now();
+
+    generateKey(expiration).then((key) => {
+        return res.json({code: 200, message: "Done", key})
+    }).catch((err) => {
+        const code = 501;
+        return res.json({code, message: err})
+    })
+     
+
 })
 
 module.exports = router;

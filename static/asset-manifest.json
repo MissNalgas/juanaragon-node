@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.2a6b89e9.chunk.css",
-    "main.js": "/static/js/main.e1b3dff6.chunk.js",
-    "main.js.map": "/static/js/main.e1b3dff6.chunk.js.map",
+    "main.js": "/static/js/main.69580126.chunk.js",
+    "main.js.map": "/static/js/main.69580126.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.05f2d595.js",
     "runtime-main.js.map": "/static/js/runtime-main.05f2d595.js.map",
     "static/js/2.b7e26495.chunk.js": "/static/js/2.b7e26495.chunk.js",
@@ -17,12 +17,13 @@
     "static/media/chesting_table.95880721.jpg": "/static/media/chesting_table.95880721.jpg",
     "static/media/lnk.a7b3b4be.jpg": "/static/media/lnk.a7b3b4be.jpg",
     "static/media/mssnapps.43e6492e.jpg": "/static/media/mssnapps.43e6492e.jpg",
-    "static/media/passhidder.8a6ac61e.jpg": "/static/media/passhidder.8a6ac61e.jpg"
+    "static/media/passhidder.8a6ac61e.jpg": "/static/media/passhidder.8a6ac61e.jpg",
+    "static/media/pets.fd45f571.jpg": "/static/media/pets.fd45f571.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.05f2d595.js",
     "static/js/2.b7e26495.chunk.js",
     "static/css/main.2a6b89e9.chunk.css",
-    "static/js/main.e1b3dff6.chunk.js"
+    "static/js/main.69580126.chunk.js"
   ]
 }

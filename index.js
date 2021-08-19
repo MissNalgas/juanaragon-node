@@ -14,6 +14,9 @@ app.engine("html", myengine);
 app.set("views", "./views");
 app.set("view engine", "html");
 
+
+require("./models/keys");
+
 app.use(express.static("static"));
 const i18n = new I18n({
     locales: ["en", "es", "ru"],
