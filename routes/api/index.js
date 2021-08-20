@@ -1,7 +1,7 @@
 const router = require("express").Router();
 
 const {generateKey, validateKey} = require("../../models/utils");
-const { secret } = require("../../secret");
+const { secret, API_KEY } = require("../../secret");
 
 
 router.get("/locale", (req, res) => {
@@ -32,12 +32,17 @@ router.post("/secret", (req, res) => {
 })
 
 router.post("/generatekey", (req, res) => {
-    if (!("expiration" in req.body)) {
+    if (!("expiration" in req.body, "apiKey" in req.body)) {
         const code = 401;
         return res.json({code, message: "Invalid"})
     }
 
-    let {expiration} = req.body;
+    let {expiration, apiKey} = req.body;
+    if (apiKey !== API_KEY) {
+        const code = 403;
+        res.statusCode = code;
+        return res.json({code, message: "Unathorized"});
+    }
     expiration += Date.now();
 
     generateKey(expiration).then((key) => {
