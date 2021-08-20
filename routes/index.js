@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const url = require("url");
 const puppeteer = require("puppeteer");
+const MAIN_URL = (process.env.NODE_ENV === "test") ? "http://localhost:3000/" : "https://juanaragon.co";
 
 router.use("/api", require("./api"));
 
@@ -16,7 +17,7 @@ async function generatePdf(key, locale) {
 
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
-    const url = `http://localhost:3001/curriculum?pdf=true&key=${key}`;
+    const url = `${MAIN_URL}/curriculum?pdf=true&key=${key}`;
     await page.setCookie({name: "locale", value: locale, url});
     await page.goto(url, {waitUntil: "networkidle2"});
 
