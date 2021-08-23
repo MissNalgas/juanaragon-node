@@ -46,7 +46,9 @@ router.post("/generatekey", (req, res) => {
     expiration += Date.now();
 
     generateKey(expiration).then((key) => {
-        return res.json({code: 200, message: "Done", key})
+        const url = (process.env.NODE_ENV === "test") ? `http://localhost:3002/curriculum?key=${key}` : `https://juanaragon.co/curriculum?key=${key}`;
+
+        return res.json({code: 200, message: "Done", key, url});
     }).catch((err) => {
         const code = 501;
         return res.json({code, message: err})
