@@ -29,9 +29,7 @@ async function generatePdf(key, locale) {
 
 router.get("/pdf", (req, res) => {
 
-    queryObj = url.parse(req.url, true).query;
-
-    const key = queryObj.key || "";
+    const key = req.query.key || "";
 
     const locale = req.getLocale() || "";
 

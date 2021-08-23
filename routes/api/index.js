@@ -32,7 +32,7 @@ router.post("/secret", (req, res) => {
 })
 
 router.post("/generatekey", (req, res) => {
-    if (!("expiration" in req.body, "apiKey" in req.body)) {
+    if (!("expiration" in req.body && "apiKey" in req.body)) {
         const code = 401;
         return res.json({code, message: "Invalid"})
     }
